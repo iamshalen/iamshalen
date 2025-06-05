@@ -44,4 +44,4 @@ jobs:
             publish_dir: ./build
 
         - name: Deploy server
-          run: npm run gh-pages -d build
+          run: npm run gh-pages -d .
