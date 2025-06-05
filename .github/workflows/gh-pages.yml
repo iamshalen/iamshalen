@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         run: yarn
 
+      - name: start server
+        run: yarn start
+
       - name: Build the app
         run: yarn build
 
@@ -27,4 +30,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./build
