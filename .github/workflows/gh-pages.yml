@@ -18,10 +18,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: yarn
-
-      - name: start server
-        run: yarn start
+        run: yarn --frozen-lockfile
 
       - name: Build the app
         run: yarn build
